@@ -1,3 +1,4 @@
+
 produk = [
     {
         "id": 1,
@@ -30,3 +31,14 @@ def daftar_produk():
 
 if __name__ == "__main__":
     daftar_produk()
+
+def tambah_cart(cart, produk):
+    cart.append(produk)
+    return "Produk berhasil ditambahkan ke cart"
+
+
+cart = []
+
+print(tambah_cart(cart, "Laptop"))
+print(cart)
+
